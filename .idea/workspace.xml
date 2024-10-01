@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caa6ae6c-5ede-45bf-9abd-87063227833b" name="Changes" comment="Final User Story A,C,D,E, and F">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/restaurants/favorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurants/favorites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/homebackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/login_background.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +40,12 @@
     &quot;assignee&quot;: &quot;aritrasaha1&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/proTJS01/CS2340-Atlanta-Food-Finder.git&quot;,
-    &quot;accountId&quot;: &quot;371dc475-6c9d-4203-9c2d-0927527dcc73&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/aritrasaha1/CS2340AppFinal.git",
+    "accountId": "371dc475-6c9d-4203-9c2d-0927527dcc73"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -64,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "demo",
+    "git-widget-placeholder": "main",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,7 +134,7 @@
       <workItem from="1727366182392" duration="18162000" />
       <workItem from="1727417224955" duration="464000" />
       <workItem from="1727495268889" duration="796000" />
-      <workItem from="1727724463699" duration="19163000" />
+      <workItem from="1727724463699" duration="20037000" />
     </task>
     <task id="LOCAL-00001" summary="User Story A,C,D,E, and F">
       <option name="closed" value="true" />
@@ -337,7 +336,31 @@
       <option name="project" value="LOCAL" />
       <updated>1727748826355</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Final User Story A,C,D,E, and F">
+      <option name="closed" value="true" />
+      <created>1727750391341</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1727750391341</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Final User Story A,C,D,E, and F">
+      <option name="closed" value="true" />
+      <created>1727750772755</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1727750772755</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Final User Story A,C,D,E, and F">
+      <option name="closed" value="true" />
+      <created>1727750972971</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1727750972971</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
