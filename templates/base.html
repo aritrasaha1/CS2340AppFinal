@@ -7,60 +7,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Atlanta Food Finder{% endblock %}</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One:wght@400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    
+
     <!-- Additional Head Content -->
     {% block extra_head %}
     {% endblock %}
 </head>
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <!-- Brand Logo with Image -->
             <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
                 <img src="{% static 'images/logo.png' %}" alt="App Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
                 Atlanta Food Finder
             </a>
-            
+
             <!-- Toggle Button for Mobile View -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <!-- Home Link -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" 
+                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
                            href="{% url 'home' %}">Home</a>
                     </li>
-                    
+
                     <!-- Restaurant Search Link -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'map' %}active{% endif %}" 
+                        <a class="nav-link {% if request.resolver_match.url_name == 'map' %}active{% endif %}"
                            href="{% url 'map' %}">Restaurant Search</a>
                     </li>
-                    
+
                     <!-- Favorites Link -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'favorites' %}active{% endif %}" 
+                        <a class="nav-link {% if request.resolver_match.url_name == 'favorites' %}active{% endif %}"
                            href="{% url 'favorites' %}">Favorites</a>
                     </li>
-                    
+
                     <!-- Authentication Links -->
                     {% if user.is_authenticated %}
                         <!-- Logout Form -->
@@ -75,13 +75,13 @@
                     {% else %}
                         <!-- Login Link -->
                         <li class="nav-item">
-                            <a class="nav-link {% if request.resolver_match.url_name == 'login' %}active{% endif %}" 
+                            <a class="nav-link {% if request.resolver_match.url_name == 'login' %}active{% endif %}"
                                href="{% url 'login' %}">Login</a>
                         </li>
-                        
+
                         <!-- Sign Up Link -->
                         <li class="nav-item">
-                            <a class="nav-link {% if request.resolver_match.url_name == 'signup' %}active{% endif %}" 
+                            <a class="nav-link {% if request.resolver_match.url_name == 'signup' %}active{% endif %}"
                                href="{% url 'signup' %}">Sign Up</a>
                         </li>
                     {% endif %}
@@ -89,7 +89,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Main Content Area -->
     {% block container %}
         <div class="container my-4 flex-grow-1">
@@ -98,20 +98,20 @@
             {% endblock %}
         </div>
     {% endblock %}
-    
+
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-auto">
         <div class="text-center p-3">
             &copy; 2024 Atlanta Food Finder. All rights reserved.
             <br>
-            <a href="#">Privacy Policy</a> | 
+            <a href="#">Privacy Policy</a> |
             <a href="#">Terms of Service</a>
         </div>
     </footer>
-    
+
     <!-- Bootstrap JS Bundle (Includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Additional JavaScript -->
     {% block extra_js %}
     {% endblock %}
