@@ -29,7 +29,7 @@ STATICFILES_DIRS = [
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_hex1(0wmm2n^#+tlvori9&k(%j&-38ujd_(i89tc797!urph4'
+SECRET_KEY = 'YOUR_SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -138,7 +138,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Google Maps API Key
-GOOGLE_MAPS_API_KEY = 'AIzaSyCP6CL_9cDOgF4bPxxHWD-o7sg0_BUEhFI'  # Replace with your actual API key
+GOOGLE_MAPS_API_KEY = 'YOUR_SECRET_KEY'  # Replace with your actual API key
 
 # Redirect to home page after login
 LOGIN_REDIRECT_URL = 'home'
